@@ -1,11 +1,14 @@
 require "rulers/version"
+# require "rulers/array"
 
-class Application 
-  def call(env)
-    `echo debug > debug.text`
-      [200, {'Content-Type' =>'text/html'},
-        ["Hello from Ruby on Rulers from the gem"]
-      ]
+module Rulers
+  class Application 
+    def call(env)
+      `echo App debug > debug.text`
+        [200, {'Content-Type' =>'text/html'},
+          ["Hello from Ruby on Rulers from the gem"]
+        ]
+    end
   end
 end
 
