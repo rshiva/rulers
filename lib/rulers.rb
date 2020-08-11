@@ -1,5 +1,5 @@
 require "rulers/version"
-# require "rulers/array"
+
 
 module Rulers
   class Application 
@@ -16,3 +16,6 @@ module Rulers
   class Error < StandardError; end
   # Your code goes here...
 end
+
+
+require "rulers/array"
